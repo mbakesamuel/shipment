@@ -4,8 +4,6 @@ import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
 import postgres from "postgres";
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
-
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData
