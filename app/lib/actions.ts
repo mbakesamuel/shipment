@@ -2,7 +2,6 @@
 
 import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
-import postgres from "postgres";
 
 export async function authenticate(
   prevState: string | undefined,
